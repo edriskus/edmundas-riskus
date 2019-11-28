@@ -1,0 +1,10 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "material-icon-theme.activeIconPack": "react",
+  "editor.formatOnSave": false,
+  "editor.minimap.renderCharacters": false,
+  "terminal.explorerKind": "external",
+  "eslint.enable": true,
+  "eslint.workingDirectories": ["./"],
+}
