@@ -7,11 +7,13 @@ export default makeStyles((theme: Theme) => ({
     position: "relative"
   },
   dot: {
-    position: "absolute",
-    left: -7,
-    top: 4,
-    color: theme.palette.text.secondary,
-    fontSize: 13
+    "svg&": {
+      position: "absolute",
+      left: -7,
+      top: 4,
+      color: theme.palette.text.secondary,
+      fontSize: 13
+    }
   },
   tags: {
     marginTop: theme.spacing(0.5),

@@ -30,11 +30,13 @@ export default makeStyles((theme: Theme) => ({
     paddingLeft: theme.spacing(1)
   },
   dot: {
-    position: "absolute",
-    left: -7,
-    top: 4,
-    color: theme.palette.text.secondary,
-    fontSize: 13
+    "svg&": {
+      position: "absolute",
+      left: -7,
+      top: 4,
+      color: theme.palette.text.secondary,
+      fontSize: 13
+    }
   },
   line: {
     display: "flex",
