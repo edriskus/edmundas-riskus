@@ -8,7 +8,7 @@ export default createMuiTheme({
       main: "#EF9B13"
     },
     secondary: {
-      main: "#BA274A"
+      main: "#22968A"
     }
   },
   typography: {

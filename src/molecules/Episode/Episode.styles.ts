@@ -7,7 +7,8 @@ export default makeStyles((theme: Theme) => ({
     paddingBottom: theme.spacing(0.5),
     display: "flex",
     flexDirection: "row",
-    width: "100%"
+    width: "100%",
+    maxWidth: "100%"
   },
   text: {
     position: "relative",
@@ -15,7 +16,9 @@ export default makeStyles((theme: Theme) => ({
     justifyContent: "flex-end",
     height: "100%",
     flexDirection: "column",
-    paddingBottom: theme.spacing(3)
+    paddingBottom: theme.spacing(3),
+    maxWidth: "calc(100% - 1px)",
+    overflow: "visible"
   },
   event: {
     position: "absolute",
@@ -23,12 +26,21 @@ export default makeStyles((theme: Theme) => ({
     top: 0
   },
   content: {
+    position: "relative",
     paddingLeft: theme.spacing(1)
+  },
+  dot: {
+    position: "absolute",
+    left: -7,
+    top: 4,
+    color: theme.palette.text.secondary,
+    fontSize: 13
   },
   line: {
     display: "flex",
     height: "100%",
     width: 1,
+    minWidth: 1,
     background: theme.palette.text.secondary
   },
   start: {

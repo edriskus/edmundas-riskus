@@ -13,8 +13,8 @@ export default function Timeline({ data }: Props) {
   const { wrapper } = useStyles();
   return (
     <Box className={wrapper}>
-      {data.map(episode => (
-        <Episode {...episode} />
+      {data.map((episode, i) => (
+        <Episode key={i} {...episode} />
       ))}
     </Box>
   );

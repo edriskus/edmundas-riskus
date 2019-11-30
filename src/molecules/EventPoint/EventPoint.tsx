@@ -1,7 +1,8 @@
 import React from "react";
 import useStyles from "./EventPoint.styles";
 
-import { Box, Typography } from "@material-ui/core";
+import { Remove } from "@material-ui/icons";
+import { Box, Chip, Typography } from "@material-ui/core";
 import { EventPoint as EventPointType } from "../../types/Landing";
 
 interface Props {
@@ -16,6 +17,7 @@ export default function EventPoint({
     <Box>
       {!!pretitle && (
         <Box className={classes.content}>
+          <Remove className={classes.dot} />
           <Typography variant="caption">{pretitle}</Typography>
         </Box>
       )}
@@ -23,6 +25,20 @@ export default function EventPoint({
         <Typography color="textSecondary" variant="h6">
           {title}
         </Typography>
+      )}
+      {!!tags && (
+        <Box className={classes.tags}>
+          {tags.map((tag, i) => (
+            <Chip
+              key={i}
+              className={classes.tag}
+              size="small"
+              variant="default"
+              color="secondary"
+              label={tag}
+            />
+          ))}
+        </Box>
       )}
     </Box>
   );
